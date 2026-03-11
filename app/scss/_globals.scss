@@ -1,9 +1,14 @@
 * {
     box-sizing: border-box;
+    // margin: 0;
 }
 
 img {
     max-width: 100%;
+}
+
+h1{
+    margin: 0;
 }
 
 body {
@@ -29,6 +34,34 @@ main {
     margin-block-end: 1.5rem;
     border-radius: 1rem;
 
+    display: flex;
+    flex-direction: column;
+
+    .category {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        width: 100%;
+        
+        img {
+            // transform: scale(0.1);
+            width: 10%;
+            height: 10%;
+        }
+    }
+
+    .daily {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+
+    .weekly, .monthly {
+        display: none;
+    }
+
     &__title {
         .info {
             display: flex;
@@ -41,7 +74,7 @@ main {
 
             img {
                 width: 25%;
-                height: 25%;
+                // height: 25%;
                 margin-inline-end: 1rem;
                 border: 3px solid $white;
                 border-radius: 50%;
@@ -81,6 +114,8 @@ main {
 
         }
     }
+
+
 }
 
 
