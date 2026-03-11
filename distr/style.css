@@ -31,7 +31,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: hsl(246, 80%, 60%);
-  padding: 1.5rem;
+  padding: 1.75rem;
   border-radius: 1rem;
 }
 .report__title .info img {
@@ -44,7 +44,7 @@ main {
 .report__title .info__text p {
   font-size: 14px;
   color: hsl(236, 100%, 87%);
-  margin-block-end: 0;
+  margin-block-end: 4px;
 }
 .report__title .info__text h1 {
   font-size: 24px;
@@ -55,8 +55,15 @@ main {
 .report__title .period {
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 0.25rem 2rem;
   color: hsl(235, 45%, 61%);
+}
+.report__title .period p {
+  cursor: pointer;
+  transition: color 200ms ease;
+}
+.report__title .period p:hover {
+  color: hsl(0, 0%, 100%);
 }
 
 .attribution {
