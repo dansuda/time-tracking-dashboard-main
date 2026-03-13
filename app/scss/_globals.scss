@@ -7,8 +7,23 @@ img {
     max-width: 100%;
 }
 
-h1{
+h1, h2, p{
     margin: 0;
+}
+
+.btn {
+    font: inherit;
+    color: $purple500;
+
+    background: none;
+    border: none;
+    
+    cursor: pointer;
+    transition: color 200ms ease;
+
+    &:hover {
+        color: $white;
+    }
 }
 
 body {
@@ -28,94 +43,48 @@ main {
     margin: 5rem auto;
 }
 
-.report {
-    background-color: $navy900;
+.container {
     // padding: 1.5rem;
-    margin-block-end: 1.5rem;
-    border-radius: 1rem;
+}
 
-    display: flex;
-    flex-direction: column;
-
-    .category {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 1.5rem;
-        width: 100%;
-        
-        img {
-            // transform: scale(0.1);
-            width: 10%;
-            height: 10%;
-        }
-    }
-
-    .daily {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 1.5rem;
-    }
-
-    .weekly, .monthly {
-        display: none;
-    }
-
+.report {
     &__title {
+        background-color: $navy900;
+        border-radius: 0 0 1rem 1rem;
+
         .info {
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
             background-color: $purple600;
-            padding: 1.75rem;
             border-radius: 1rem;
 
-
             img {
-                width: 25%;
-                // height: 25%;
-                margin-inline-end: 1rem;
+                width: clamp(4rem, 22%, 5rem);
                 border: 3px solid $white;
-                border-radius: 50%;
+                border-radius: 100%;
+                margin-inline-end: 1rem;
             }
 
-            &__text {
-                p {
-                    font-size: 14px;
-                    color: $navy200;
-                    margin-block-end: 4px;
-                }
+            p {
+                font-size: 14px;
+                font-weight: $light;
+                color: $navy200;
+            }
 
-                h1 {
-                    font-size: 24px;
-                    font-weight: $light;
-                    color: $white;
-                    margin-block-start: 0;
-                }
+            h1 {
+                font-size: 22px;
+                font-weight: $light;
             }
         }
 
         .period {
             display: flex;
             justify-content: space-between;
-            padding: 0.25rem 2rem;
-            color: $purple500;
-
-            p {
-                cursor: pointer;
-                transition: color 200ms ease;
-
-                &:hover {
-                    color: $white;
-                }
-            }
-
-
+            padding: 1.375rem;
         }
     }
-
-
 }
 
 

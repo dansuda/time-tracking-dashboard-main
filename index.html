@@ -19,6 +19,12 @@
 
   <title>Frontend Mentor | Time tracking dashboard</title>
 
+  <!--font awesome kit-->
+  <script src="https://kit.fontawesome.com/c225f25f43.js" crossorigin="anonymous"></script>
+
+  <!--javascript file-->
+  <script defer src="./app/js/script.js"></script>
+
 </head>
 
 <body>
@@ -26,7 +32,7 @@
   <main>
     <div class="report report__title">
       <div class="info">
-        <img src="./images/image-jeremy.png" alt="client avatar">
+        <img src="./images/image-jeremy.png" alt="jeremy avatar">
         <div class="info__text">
           <p>Report for</p>
           <h1>Jeremy Robson</h1>
@@ -34,126 +40,144 @@
       </div>
 
       <div class="period">
-        <p>Daily</p>
-        <p>Weekly</p>
-        <p>Monthly</p>
+        <button class="btn">Daily</button>
+        <button class="btn">Weekly</button>
+        <button class="btn">Monthly</button>
       </div>
 
     </div>
-    <div class="report report__work">
-      <div class="category">
-        <p>Work</p>
-        <img src="./images/icon-ellipsis.svg" alt="ellipsis">
-      </div>
-      <div class="daily">
-        <h1>5hrs </h1><!-- daily -->
-        <p>Previous - 7hrs</p> <!-- daily -->
-      </div>
-      <div class="weekly">
-        <h1>32hrs</h1> <!-- weekly -->
-        <p>Previous - 36hrs</p> <!-- weekly -->
-      </div>
-      <div class="monthly">
-        <h1>103hrs</h1> <!-- monthly -->
-        <p>Previous - 128hrs</p> <!-- monthly -->
+
+    <div class="work-div container">
+      <div class="work-image"></div>
+      <div class="report report__work">
+
+        <div class="category">
+          <p>Work</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+        <div class="daily">
+          <h2>5hrs </h2><!-- daily -->
+          <p>Previous - 7hrs</p> <!-- daily -->
+        </div>
+
+        <div class="weekly">
+          <h2>32hrs</h2> <!-- weekly -->
+          <p>Previous - 36hrs</p> <!-- weekly -->
+        </div>
+
+        <div class="monthly">
+          <h2>103hrs</h2> <!-- monthly -->
+          <p>Previous - 128hrs</p> <!-- monthly -->
+        </div>
       </div>
     </div>
 
-    <div class="report report__play">
-      <div class="category">
-        <p>Play</p>
-        <img src="./images/icon-ellipsis.svg" alt="ellipsis">
-      </div>
-      
-      <div class="daily">
-        <h1>1hr </h1><!-- daily -->
-        <p>Previous - 2hrs</p> <!-- daily -->
-      </div>
-      <div class="weekly">
-        <h1>10hrs</h1> <!-- weekly -->
-        <p>Previous - 8hrs</p> <!-- weekly -->
-      </div>
-      <div class="monthly">
-        <h1>23hrs</h1> <!-- monthly -->
-        <p>Previous - 29hrs</p> <!-- monthly -->
+    <div class="play-div container">
+      <div class="report report__play">
+        <div class="category">
+          <p>Play</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+        <div class="daily">
+          <h2>1hr </h2><!-- daily -->
+          <p>Previous - 2hrs</p> <!-- daily -->
+        </div>
+        <div class="weekly">
+          <h2>10hrs</h2> <!-- weekly -->
+          <p>Previous - 8hrs</p> <!-- weekly -->
+        </div>
+        <div class="monthly">
+          <h2>23hrs</h2> <!-- monthly -->
+          <p>Previous - 29hrs</p> <!-- monthly -->
+        </div>
       </div>
     </div>
 
-    <div class="report report__study">
-      <div class="category">
-        <p>Study</p>
-        <img src="./images/icon-ellipsis.svg" alt="ellipsis">
-      </div>
-      
-      <div class="daily">
-        <h1>0hrs </h1><!-- daily -->
-        <p>Previous - 1hr</p> <!-- daily -->
-      </div>
-      <div class="weekly">
-        <h1>4hrs</h1> <!-- weekly -->
-        <p>Previous - 7hrs</p> <!-- weekly -->
-      </div>
-      <div class="monthly">
-        <h1>13hrs</h1> <!-- monthly -->
-        <p>Previous - 19hrs</p> <!-- monthly -->
+    <div class="study-div container">
+      <div class="report report__study">
+        <div class="category">
+          <p>Study</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+        <div class="daily">
+          <h2>0hrs </h2><!-- daily -->
+          <p>Previous - 1hr</p> <!-- daily -->
+        </div>
+        <div class="weekly">
+          <h2>4hrs</h2> <!-- weekly -->
+          <p>Previous - 7hrs</p> <!-- weekly -->
+        </div>
+        <div class="monthly">
+          <h2>13hrs</h2> <!-- monthly -->
+          <p>Previous - 19hrs</p> <!-- monthly -->
+        </div>
       </div>
     </div>
 
-    <div class="report report__exercise">
-      <div class="category">
-        <p>Exercise</p>
-        <img src="./images/icon-ellipsis.svg" alt="ellipsis">
-      </div>
-      
-      <div class="daily">
-        <h1>1hr </h1><!-- daily -->
-        <p>Previous - 1hr</p> <!-- daily -->
-      </div>
-      <div class="weekly">
-        <h1>4hrs</h1> <!-- weekly -->
-        <p>Previous - 5hrs</p> <!-- weekly -->
-      </div>
-      <div class="monthly">
-        <h1>11hrs</h1> <!-- monthly -->
-        <p>Previous - 18hrs</p> <!-- monthly -->
+    <div class="exercise-div container">
+      <div class="report report__exercise">
+        <div class="category">
+          <p>Exercise</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+        <div class="daily">
+          <h2>1hr </h2><!-- daily -->
+          <p>Previous - 1hr</p> <!-- daily -->
+        </div>
+        <div class="weekly">
+          <h2>4hrs</h2> <!-- weekly -->
+          <p>Previous - 5hrs</p> <!-- weekly -->
+        </div>
+        <div class="monthly">
+          <h2>11hrs</h2> <!-- monthly -->
+          <p>Previous - 18hrs</p> <!-- monthly -->
+        </div>
       </div>
     </div>
 
-    <div class="report report__social">
-      <div class="category">
-        <p>Social</p>
-      <img src="./images/icon-ellipsis.svg" alt="ellipsis">
-      </div>
-      <div class="daily">
-        <h1>1hr </h1><!-- daily -->
-        <p>Previous - 3hrs</p> <!-- daily -->
-      </div>
-      <div class="weekly">
-        <h1>5hrs</h1> <!-- weekly -->
-        <p>Previous - 10hrs</p> <!-- weekly -->
-      </div>
-      <div class="monthly">
-        <h1>21hrs</h1> <!-- monthly -->
-        <p>Previous - 23hrs</p> <!-- monthly -->
+    <div class="social-div container">
+      <div class="report report__social">
+        <div class="category">
+          <p>Social</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <div class="daily">
+          <h2>1hr </h2><!-- daily -->
+          <p>Previous - 3hrs</p> <!-- daily -->
+        </div>
+        <div class="weekly">
+          <h2>5hrs</h2> <!-- weekly -->
+          <p>Previous - 10hrs</p> <!-- weekly -->
+        </div>
+        <div class="monthly">
+          <h2>21hrs</h2> <!-- monthly -->
+          <p>Previous - 23hrs</p> <!-- monthly -->
+        </div>
       </div>
     </div>
 
-    <div class="report report__selfcare">
-      <div class="category">
-        <p>Self Care</p>
-      <img src="./images/icon-ellipsis.svg" alt="ellipsis">
-      </div>
-      <div class="daily">
-        <h1>0hrs </h1><!-- daily -->
-        <p>Previous - 1hr</p> <!-- daily -->
-      </div>
-      <div class="weekly">
-        <h1>2hrs</h1> <!-- weekly -->
-        <p>Previous - 2hrs</p> <!-- weekly -->
-      </div>
-      <div class="monthly">
-        <h1>7hrs</h1> <!-- monthly -->
-        <p>Previous - 11hrs</p> <!-- monthly -->
+    <div class="selfcare-div container">
+      <div class="report report__selfcare">
+        <div class="category">
+          <p>Self Care</p>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <div class="daily">
+          <h2>0hrs </h2><!-- daily -->
+          <p>Previous - 1hr</p> <!-- daily -->
+        </div>
+        <div class="weekly">
+          <h2>2hrs</h2> <!-- weekly -->
+          <p>Previous - 2hrs</p> <!-- weekly -->
+        </div>
+        <div class="monthly">
+          <h2>7hrs</h2> <!-- monthly -->
+          <p>Previous - 11hrs</p> <!-- monthly -->
+        </div>
       </div>
     </div>
   </main>
