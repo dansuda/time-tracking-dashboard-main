@@ -6,7 +6,9 @@ img {
   max-width: 100%;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -18,7 +20,7 @@ h1, h2, p {
   cursor: pointer;
   transition: color 200ms ease;
 }
-.btn:hover {
+.btn:hover, .btn:focus {
   color: hsl(0, 0%, 100%);
 }
 
@@ -35,13 +37,14 @@ main {
   display: grid;
   width: 87.2%;
   margin: 5rem auto;
+  gap: 2rem;
 }
 
-.report__title {
+.title {
   background-color: hsl(235, 46%, 20%);
   border-radius: 0 0 1rem 1rem;
 }
-.report__title .info {
+.title .info {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,25 +52,101 @@ main {
   background-color: hsl(246, 80%, 60%);
   border-radius: 1rem;
 }
-.report__title .info img {
+.title .info img {
   width: clamp(4rem, 22%, 5rem);
   border: 3px solid hsl(0, 0%, 100%);
   border-radius: 100%;
   margin-inline-end: 1rem;
 }
-.report__title .info p {
+.title .info p {
   font-size: 14px;
   font-weight: 300;
   color: hsl(236, 100%, 87%);
 }
-.report__title .info h1 {
+.title .info h1 {
   font-size: 22px;
   font-weight: 300;
 }
-.report__title .period {
+.title .period {
   display: flex;
   justify-content: space-between;
-  padding: 1.375rem;
+  padding: 1.375rem 0;
+}
+.title .period .btn {
+  flex: 1;
+}
+
+.container {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+}
+
+.report {
+  padding: 1.75rem;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+}
+
+.work-image {
+  background: url(../../images/icon-work.svg);
+  background-color: hsl(15, 100%, 70%);
+}
+
+.play-image {
+  background: url(../../images/icon-play.svg);
+  background-color: hsl(195, 74%, 62%);
+}
+
+.study-image {
+  background: url(../../images/icon-study.svg);
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise-image {
+  background: url(../../images/icon-exercise.svg);
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social-image {
+  background: url(../../images/icon-social.svg);
+  background-color: hsl(264, 64%, 52%);
+}
+
+.selfcare-image {
+  background: url(../../images/icon-self-care.svg);
+  background-color: hsl(43, 84%, 65%);
+}
+
+.img {
+  height: 5rem;
+  background-repeat: no-repeat;
+  background-position: top -0.5rem right 1rem;
+  margin-bottom: -2.5rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.hrs,
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category {
+  margin-block-end: 0.5rem;
+}
+
+.hrs p {
+  font-size: 1rem;
+  color: hsl(236, 100%, 87%);
+}
+.hrs h2 {
+  font-weight: 300;
+}
+
+.weekly,
+.monthly {
+  display: none;
 }
 
 .attribution {

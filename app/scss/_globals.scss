@@ -7,7 +7,9 @@ img {
     max-width: 100%;
 }
 
-h1, h2, p{
+h1,
+h2,
+p {
     margin: 0;
 }
 
@@ -17,11 +19,11 @@ h1, h2, p{
 
     background: none;
     border: none;
-    
+
     cursor: pointer;
     transition: color 200ms ease;
 
-    &:hover {
+    &:hover, &:focus {
         color: $white;
     }
 }
@@ -41,51 +43,129 @@ main {
     display: grid;
     width: 87.2%;
     margin: 5rem auto;
+    gap: 2rem;
 }
 
-.container {
-    // padding: 1.5rem;
-}
+.title {
+    background-color: $navy900;
+    border-radius: 0 0 1rem 1rem;
 
-.report {
-    &__title {
-        background-color: $navy900;
-        border-radius: 0 0 1rem 1rem;
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+        background-color: $purple600;
+        border-radius: 1rem;
 
-        .info {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem 0;
-            background-color: $purple600;
-            border-radius: 1rem;
-
-            img {
-                width: clamp(4rem, 22%, 5rem);
-                border: 3px solid $white;
-                border-radius: 100%;
-                margin-inline-end: 1rem;
-            }
-
-            p {
-                font-size: 14px;
-                font-weight: $light;
-                color: $navy200;
-            }
-
-            h1 {
-                font-size: 22px;
-                font-weight: $light;
-            }
+        img {
+            width: clamp(4rem, 22%, 5rem);
+            border: 3px solid $white;
+            border-radius: 100%;
+            margin-inline-end: 1rem;
         }
 
-        .period {
-            display: flex;
-            justify-content: space-between;
-            padding: 1.375rem;
+        p {
+            font-size: 14px;
+            font-weight: $light;
+            color: $navy200;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: $light;
+        }
+    }
+
+    .period {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.375rem 0;
+
+        .btn {
+            flex: 1;
         }
     }
 }
+
+.container {
+    background-color: $navy900;
+    border-radius: 1rem;
+    // overflow: hidden;
+}
+
+.report {
+    padding: 1.75rem;
+    background-color: $navy900;
+    border-radius: 1rem;
+}
+
+.work-image {
+    background: url(../../images/icon-work.svg);
+    background-color: $orange300;
+}
+
+.play-image {
+    background: url(../../images/icon-play.svg);
+    background-color: $blue300;
+}
+
+.study-image {
+    background: url(../../images/icon-study.svg);
+    background-color: $pink400;
+}
+
+.exercise-image {
+    background: url(../../images/icon-exercise.svg);
+    background-color: $green400;
+}
+
+.social-image {
+    background: url(../../images/icon-social.svg);
+    background-color: $purple700;
+}
+
+.selfcare-image {
+    background: url(../../images/icon-self-care.svg);
+    background-color: $yellow300;
+}
+
+.img {
+    height: 5rem;
+    background-repeat: no-repeat;
+    background-position: top -0.5rem right 1rem;
+    margin-bottom: -2.5rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+
+.hrs,
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category {
+    margin-block-end: 0.5rem;
+}
+
+.hrs {
+    p {
+        font-size: 1rem;
+        color: $navy200;
+    }
+
+    h2 {
+        font-weight: $light;
+    }
+}
+
+.weekly,
+.monthly {
+    display: none;
+}
+
 
 
 
